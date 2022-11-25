@@ -6,11 +6,16 @@ int []array = new int[size];
 for (int i = 0; i < array.Length; i++)
 {
     array[i] = new Random().Next(0, 1000);
-    Print();
 }
+Print(array, size);
 
-
-void Print()
+void Print(int[] array, int size)
 {
-    Console.Write(array[i] + " ");
+    int i = 0;
+    while (i < size)
+    {
+        Console.Write(array[i] + " ");
+        i++;
+    }
 }
+
